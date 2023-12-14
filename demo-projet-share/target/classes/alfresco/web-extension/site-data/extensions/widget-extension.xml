@@ -1,0 +1,20 @@
+<extension>
+  <modules>
+    <module>
+      <id>My custom widgets</id>
+      <version>1.0</version>
+      <auto-deploy>true</auto-deploy>
+      <configurations>
+        <config evaluator="string-compare" condition="WebFramework" replace="false">
+          <web-framework>
+            <dojo-pages>
+              <packages>
+                <package name="mycmpny" location="resources/demo-projet-share/js/mycmpny"/>
+              </packages>
+            </dojo-pages>
+          </web-framework>
+        </config>
+      </configurations>
+    </module>
+  </modules>
+</extension>

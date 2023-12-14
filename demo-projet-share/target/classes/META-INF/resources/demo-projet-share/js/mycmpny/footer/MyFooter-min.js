@@ -1,0 +1,1 @@
+define(["dojo/_base/declare","dojo/text!./templates/my-footer.html","alfresco/footer/AlfShareFooter"],function(c,d,a){return c([a],{cssRequirements:[{cssFile:"./css/my-footer.css"}],i18nRequirements:[{i18nFile:"./i18n/MyFooter.properties"}],postMixInProperties:function b(){this.inherited(arguments);this.templateString=d;this.snowLabel=this.message(this.snowLabel)}})});

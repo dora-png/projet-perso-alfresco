@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+   <title>Gestion Electronique des courriers</title>
+   <!--<title-id>page.adminConsole.title</title-id>-->
+   <description>Gestion Electronique des courriers</description>
+   <!--<description-id>page.adminConsole.description</description-id>-->
+   <template-instance>mail</template-instance>
+   <authentication>user</authentication>
+    <args>
+        <arg name="toolid">${url.templateArgs.toolid}</arg>
+    </args>
+   <components>
+
+      <!-- Title -->
+      <component>
+         <region-id>title</region-id>
+         <url>/components/title/simple-title</url>
+         <properties>
+            <title>Gestion Electronique des courriers</title>
+         </properties>
+      </component>
+
+      <!-- Tools -->
+      <component>
+         <region-id>tools</region-id>
+         <url>/components/mail/tools</url>
+      </component>
+
+   </components>
+</page>

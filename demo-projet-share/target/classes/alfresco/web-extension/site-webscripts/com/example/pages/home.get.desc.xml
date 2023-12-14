@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Mailbox Page</shortname>
+    <description>Mail box page definition</description>
+    <family>Share</family>
+    <url>/home</url>
+</webscript>

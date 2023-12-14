@@ -1,0 +1,59 @@
+version: '3.4'
+services:
+  demo-projet-share:
+    image: alfresco-share-demo-projet:development
+    build:
+      dockerfile: ./Dockerfile
+      context: ../../../demo-projet-share-docker/target
+    environment:
+      CATALINA_OPTS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:8888"
+      REPO_HOST: demo-projet-acs
+      REPO_PORT: 8080
+    ports:
+      - "8180:8080"
+      - "9898:8888"
+  demo-projet-acs:
+    image: alfresco-content-services-demo-projet:development
+    build:
+      dockerfile: ./Dockerfile
+      context: ../../../demo-projet-platform-docker/target
+    environment:
+      CATALINA_OPTS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=0.0.0.0:8888"
+    ports:
+      - "8080:8080"
+      - "8888:8888"
+    volumes:
+      - demo-projet-acs-volume:/usr/local/tomcat/alf_data
+    depends_on:
+      - demo-projet-postgres
+  demo-projet-postgres:
+    image: postgres:9.6
+    environment:
+      POSTGRES_DB: alfresco
+      POSTGRES_USER: alfresco
+      POSTGRES_PASSWORD: alfresco
+    command: postgres -c max_connections=300 -c log_min_messages=LOG
+    ports:
+      - "5555:5432"
+    volumes:
+      - demo-projet-db-volume:/var/lib/postgresql/data
+  demo-projet-ass:
+    image: alfresco/alfresco-search-services:1.2.0
+    environment:
+      SOLR_ALFRESCO_HOST: demo-projet-acs
+      SOLR_ALFRESCO_PORT: 8080
+      SOLR_SOLR_HOST: demo-projet-ass
+      SOLR_SOLR_PORT: 8983
+      SOLR_CREATE_ALFRESCO_DEFAULTS: alfresco,archive
+    ports:
+      - "8983:8983"
+    volumes:
+      - demo-projet-ass-volume:/opt/alfresco-search-services/contentstore
+      - demo-projet-ass-volume:/opt/alfresco-search-services/data
+volumes:
+  demo-projet-acs-volume:
+    external: true
+  demo-projet-db-volume:
+    external: true
+  demo-projet-ass-volume:
+    external: true

@@ -1,0 +1,5 @@
+<webscript>
+    <shortname>helloworldbody</shortname>
+    <description>Returns the body content for the Hello World page.</description>
+    <url>/components/helloworld/body</url>
+</webscript>

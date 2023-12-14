@@ -1,0 +1,6 @@
+<webscript>
+  <shortname>Gestion des rôles</shortname>
+  <description>Administration - Gestion des rôles</description>
+  <url>/components/console/roles</url>
+  <family>admin-console</family>
+</webscript>

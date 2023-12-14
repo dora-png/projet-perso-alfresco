@@ -1,0 +1,6 @@
+<webscript>
+   <shortname>Get the pages for the requested site</shortname>
+   <description>This WebScript is added to allow the tutorials/SitesMenu widget to asynchronously request the page for each site</description>
+   <url>/tutorials/site/{shortname}</url>
+   <format default="json"></format>
+</webscript>                        

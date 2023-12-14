@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Hello World</shortname>
+    <description>Hello World page definition</description>
+    <family>Share</family>
+    <url>/helloworld</url>
+</webscript>

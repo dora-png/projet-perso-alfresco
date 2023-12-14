@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+   <title>Cuy Theme Override</title>
+   <title-id>theme.CuyTheme</title-id>
+   <css-tokens>
+      <!-- Aikau related LESS variables (requires Aikau 1.0.18 or newer) -->
+      <less-variables>
+         .dashlet .title {
+            background-color: #01579b;
+            background-image: url(images/dashlet-title-bg.png);
+            background-repeat: repeat-x;
+            color: #fff;
+         }
+         .dashlet .body h3 a{
+            font-weight: normal;
+            color: #526A53;
+         }
+         .dashlet .body h3 a:hover{
+            font-weight: normal;
+            color: #01579b;
+         }
+         .theme-color-1, a.theme-color-1, a.theme-color-1:visited, a.theme-color-1:hover {
+            color: #01579b;
+         }
+         .yui-skin-greenTheme .node .nodeTitle a, .yui-skin-greenTheme .node .nodeURL a, .yui-skin-greenTheme .nodeAttrValue a, .yui-skin-greenTheme .nodeFooter .tag a, .yui-skin-greenTheme .yui-dt-highlighted .tag a, .yui-skin-greenTheme .yui-dt-highlighted .category a, .yui-skin-greenTheme .yui-dt-highlighted .item-social a, .yui-skin-greenTheme a.wiki-tag-link, .yui-skin-greenTheme .node .userLink a, .yui-skin-greenTheme .site-members h3 a, .yui-skin-greenTheme .yui-calendar td.calcell a, .yui-skin-greenTheme .doclist .documents a, .yui-skin-greenTheme .attrValue a, .yui-skin-greenTheme .detail .item a, .yui-skin-greenTheme .info .meta-value a, .yui-skin-greenTheme .rules-none a, .yui-skin-greenTheme .agendaview a, .yui-skin-greenTheme a.previousEvents, .yui-skin-greenTheme a.nextEvents, .yui-skin-greenTheme div.channels a {
+            color: #01579b;
+         }
+         .yui-overlay, .sticky-wrapper, .sticky-footer {
+            font-family: Arial, sans-serif;
+            color: #F9FCFD;
+         }
+         body.yui-skin-greenTheme .yuimenu .bd {
+            border: 1px solid #fff;
+         }
+         .yuimenuitem .yuimenuitem-selected {
+            background-color: #01579b;
+            color: #000;
+         }
+
+         .sticky-push, .sticky-footer {
+            display: none !important;
+         }
+         .theme-bg-color-3, div.theme-bg-color-3, .groups .search-bar-text, .search-bar theme-bg-color-3 {
+            color: #01579b;
+         }
+         .yui-skin-greenTheme .yui-dt-liner, .alfresco-datatable td .yui-dt-liner {
+            padding: 4px;
+            color: #000;
+         }
+         th.alfresco-lists-views-layouts-HeaderCell {
+            background-color: 
+            #f5f5f5;
+            border-top: 1px solid
+            #e5e5e5;
+            border-bottom: 1px solid
+            #e5e5e5;
+            border-right: 1px solid
+            #e5e5e5;
+            padding: 10px;
+            margin: 0;
+            vertical-align: middle;
+            text-align: left;
+            color: #000;
+         }
+         .sticky-wrapper h3, .yui-overlay h3 {
+            font-size: 108%;
+            color: 
+            #000;
+         }
+         th.alfresco-lists-views-layouts-HeaderCell {
+            background-color: 
+            #f5f5f5;
+            border-top: 1px solid
+            #e5e5e5;
+            border-bottom: 1px solid
+            #e5e5e5;
+            border-right: 1px solid
+            #e5e5e5;
+            padding: 10px;
+            margin: 0;
+            vertical-align: middle;
+            text-align: left;
+            color:#000;
+         }
+         .alfresco-lists-views-AlfListView__no-data {
+            color:#000;
+         }
+         .tags-list-info {
+            color:#000;
+         }
+         #page_x002e_ctool_x002e_admin-console_x0023_default {
+            color: #000;
+         }
+         @header-background-color: #fff;
+         @header-font-color: #333;
+         @header-hover-background-color: #fff;
+         @header-hover-font-color: #01579b;
+         @header-focus-background-color: #fff;
+         @header-focus-font-color: #6c757d;
+         @header-menubar-font-color: #6c757d;
+         @header-dropdown-menu-font-color: #6c757d;
+         #yui-gen132 {
+         color: #000;
+         }
+         #roles a {
+            display: block;
+            padding: 0.333em;
+            text-decoration: none;
+         }
+         #roleGroups a, #roleUsers a {
+            text-decoration: none;
+         }
+         #yui-gen78 {
+            color: #000;
+         }
+         .yui-u {
+            color: #000;
+         }
+         .rm-email-mappings h2 {
+            margin: 1em 0;
+            color: #000;
+         }
+         .rm-email-mappings .rm-email-mappings-list {
+            background-color: #fff;
+            border: 1px solid #D7D7D7;
+            margin-top: 1em;
+            color:#000;
+         }
+
+         #roleContent ul.capabilities-list {
+            text-align: left;
+            margin: 0 0;
+            clear: both;
+            color: #000;
+         }
+         .rm-audit h2 {
+            font-size: 120%;
+            color: #000;
+         }
+         .rm-audit .yui-gb .yui-u {
+            text-align: left;
+            color: #000;
+         }
+         .colleagues .toolbar .paginator {
+            line-height: 2;
+            margin: 0 0 0 0.3em;
+            padding: 0;
+            color: #000;
+         }
+         .alf-site-visibility span {
+            vertical-align: baseline;
+            cursor: help;
+            color: #000;
+         }
+         .profile .viewcolumn {
+            padding-bottom: 1em;
+            color: #000;
+         }
+         .profile .header-bar {
+            min-height: 1.1em;
+            padding: 0.3em;
+            margin: 1.5em 1em 0em 1em;
+            background-color: #e3eaec;
+            border-bottom: 2px solid #f0f3f4;
+            font-weight: bold;
+            font-size: 116%;
+            color: #000;
+         }
+         #bd {
+            padding-bottom: 1em;
+            color: #000;
+         }
+         .alfresco-share .sticky-wrapper p, .yui-overlay p {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: #000;
+         }
+         #HEADER_SITE_DASHBOARD_text {
+            display: none;
+         }
+         .savedsearch .filter3:hover {
+            color: #0055b8;
+         }
+         .transfers .filter2:hover {
+            color: #0055b8;
+         }
+         .holds .filter2:hover {
+            color: #0055b8;
+         }
+         .unfiledRecords .filter2:hover {
+            color: #0055b8;
+         }
+         .aca-header-dg .mat-toolbar {
+            background-color: #438eb9 !important;
+         }
+         .ygtvlabel:hover, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover {
+            background-color: #F9FBFD;
+            cursor: pointer;
+            margin-left: 2px;
+            text-decoration: none;
+            color:#0055b8;
+         }
+         
+        .alfresco-share .alfresco-header-Header {
+               color: white !important;
+               font-family: Open Sans, arial, helvetica, clean, sans-serif !important;
+               background: rgb(0, 19, 128) !important;
+               height: 59px !important;
+               text-align: center !important;
+         }
+         .alfresco-share .alfresco-header-Header .dijitReset.dijitInline.dijitMenuItemLabel.dijitMenuItem {
+            color: #fff !important;
+         }
+         .alfresco-layout-LeftAndRight__left {
+            float: left !important;
+            margin-top: 20px !important;
+            margin-left: 150px !important;
+         }
+         .alfresco-layout-LeftAndRight__right {
+            float: right !important;
+            margin-top: 20px !important;
+         }
+         .alfresco-share .alfresco-header-SearchBox {
+            margin: 2px 10px 0px 10px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 1px 1px 3px #cccccc inset;
+            padding-left: 4px;
+            padding-bottom: 1px;
+            height: 38px !important;
+            margin-top: -8px !important;
+         }
+         .alfresco-html-Image__img {
+            background-repeat: no-repeat !important;
+            display: inline-block !important;
+            width: 125px !important;
+            height: 90px !important;
+            position: relative;
+            bottom: 90px !important;
+            margin-left: -135px !important;
+            margin-top: -20px !important;
+            border-radius: 80px;
+         }
+         .alfresco-share h1.alfresco-header-Title .alfresco-header-Title__text {
+            font-family: Open Sans Condensed, Arial, sans-serif !important;
+            color: rgba(0,0,0,.7) !important;
+            margin-left: -120px !important;
+            font-weight: bold !important;
+            font-size: 20px !important;
+         }
+         .tool ul.toolLink .first-link {
+            position: relative;
+            display: none;
+         }
+
+
+         .login-copy{
+            display: none !important;
+         }
+
+         .form-fields.login .form-field > span.yui-button > .first-child {
+            background-color: rgb(0, 41, 128) !important;
+            border-color: rgb(0, 13, 128) !important;
+            height: 34px !important;
+         }
+
+         .form-fields.login .form-field > span.yui-button {
+            border-color: rgb(0, 34, 128) !important;
+            margin: 0 !important;
+         }
+
+         .login .product-name {
+            font-size: 180% !important;
+            color: rgb(0, 30, 128) !important;
+            font-family: Open Sans Bold !important;
+            margin-top: 32px !important;
+         }
+
+         a.tool-link {
+            color: #585858;
+            display: block;
+            text-decoration: none;
+            border: solid #e5e5e5;
+            border-width: 1px 0 0;
+            font-size: 12px;
+            padding: 15px 8px 0;
+         }
+         .alfresco-share .alfresco-header-Header .dijitReset.dijitInline.dijitMenuItemLabel.dijitMenuItem:hover {
+            color: #fff !important;
+            background: #438eb9 !important;
+         }
+         .alfresco-share .alfresco-header-Header .dijitReset.dijitInline.dijitMenuItemLabel.dijitMenuItemSelected.dijitMenuItem{
+            color: #fff !important;
+            background: #438eb9 !important;
+         }
+         #alf-filters {
+            background: #f5f5f5 !important;
+         }
+</less-variables>
+   </css-tokens>
+</theme>
